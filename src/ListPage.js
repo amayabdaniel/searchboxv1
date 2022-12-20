@@ -5,7 +5,7 @@ const ListPage = ({ searchResults }) => {
         <Post key={post.id} post={post} />
     ));
 
-    const content = results?.length ? results : <article><p>No matches</p></article>
+    const content = results.length ? results : <article><p>No matches</p></article>
     return (
         <main>{content}</main>
     )
